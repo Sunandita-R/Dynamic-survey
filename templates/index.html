@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Survey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #a79797;
+            color: #E0E0E0;
+        }
+        #survey, #completion-message {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #1E1E1E;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #252525;
+            border-radius: 6px;
+        }
+        .answer {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #a79797;
+            border-radius: 6px;
+            border: none;
+            color: #0c0c0c;
+            width: calc(100% - 20px);
+        }
+        .answer::placeholder {
+            color: #888;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="survey">
+        <div id="questions-container"></div>
+        <div id="current-question" class="question"></div>
+        <input type="text" id="answer-input" class="answer" placeholder="Your answer">
+        <button onclick="submitAnswer()">Submit</button>
+    </div>
+    <div id="completion-message" style="display: none;">
+        <h2>Survey complete. Thank you for your feedback!</h2>
+    </div>
+
+    <script>
+        let currentQuestionId = 1;
+
+        function loadQuestion(questionId) {
+            fetch(`/next-question`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ question_id: questionId, answer: 'positive' })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    document.getElementById('survey').style.display = 'none';
+                    document.getElementById('completion-message').style.display = 'block';
+                } else {
+                    const questionContainer = document.getElementById('questions-container');
+                    const currentQuestionElement = document.getElementById('current-question');
+                    
+                    if (questionId !== 0) {
+                        const previousQuestion = document.createElement('div');
+                        previousQuestion.classList.add('question');
+                        previousQuestion.innerText = currentQuestionElement.innerText;
+                        const previousAnswer = document.createElement('div');
+                        previousAnswer.classList.add('answer');
+                        previousAnswer.innerText = document.getElementById('answer-input').value;
+                        questionContainer.appendChild(previousQuestion);
+                        questionContainer.appendChild(previousAnswer);
+                    }
+
+                    currentQuestionElement.innerText = data.text;
+                    document.getElementById('answer-input').value = '';
+                    currentQuestionId = questionId + 1;
+                }
+            });
+        }
+
+        function submitAnswer() {
+            const answer = document.getElementById('answer-input').value;
+            fetch(`/next-question`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ question_id: currentQuestionId, answer: answer })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    document.getElementById('survey').style.display = 'none';
+                    document.getElementById('completion-message').style.display = 'block';
+                } else {
+                    const questionContainer = document.getElementById('questions-container');
+                    const currentQuestionElement = document.getElementById('current-question');
+                    
+                    const previousQuestion = document.createElement('div');
+                    previousQuestion.classList.add('question');
+                    previousQuestion.innerText = currentQuestionElement.innerText;
+                    const previousAnswer = document.createElement('div');
+                    previousAnswer.classList.add('answer');
+                    previousAnswer.innerText = answer;
+                    questionContainer.appendChild(previousQuestion);
+                    questionContainer.appendChild(previousAnswer);
+
+                    currentQuestionElement.innerText = data.text;
+                    document.getElementById('answer-input').value = '';
+                    currentQuestionId = data.id;  // Ensure the next question id is updated
+                }
+            });
+        }
+
+        // Load the first question when the page loads
+        window.onload = () => {
+            loadQuestion(0);
+        };
+    </script>
+</body>
+</html>

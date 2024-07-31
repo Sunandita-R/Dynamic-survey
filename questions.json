@@ -1,0 +1,930 @@
+{"0": {
+      "text": "How often do you use our product?",
+      "type": "text",
+      "next": {
+        "positive": 1,
+        "negative": 5,
+        "neutral": 3
+      }
+    },
+      "1": {
+          "text": "How satisifed are you with the product?",
+    "type": "text",
+    "next": {
+        "positive": 2,
+        "negative": 3,
+        "neutral": 4
+    }
+      },
+      "2": {
+          "text": "What specific aspects of our product do you like?",
+          "type": "text",
+          "next": {
+              "positive": 5,
+              "negative": 6,
+              "neutral": 7
+          }
+      },
+      "3": {
+          "text": "What specific aspects of our product do you dislike?",
+          "type": "text",
+          "next": {
+              "positive": 8,
+              "negative": 9,
+              "neutral": 10
+          }
+      },
+      "4": {
+          "text": "How does our product compare to your expectations?",
+          "type": "text",
+          "next": {
+              "positive": 11,
+              "negative": 12,
+              "neutral": 13
+          }
+      },
+      "5": {
+          "text": "How satisfied are you with the product’s features?",
+          "type": "scale",
+          "next": {
+              "positive": 6,
+              "negative": 15,
+              "neutral": 16
+          }
+      },
+      "6": {
+          "text": "Would you recommend our product to others?",
+          "type": "scale",
+          "next": {
+              "positive": 8,
+              "negative": 9,
+              "neutral": 19
+          }
+      },
+      "7": {
+          "text": "How often do you use our product?",
+          "type": "multiple_choice",
+          "choices": ["Daily", "Weekly", "Monthly", "Rarely"],
+          "next": {
+              "positive": 20,
+              "negative": 21,
+              "neutral": 22
+          }
+      },
+      "8": {
+          "text": "What do you think about the product's pricing?",
+          "type": "text",
+          "next": {
+              "positive": 10,
+              "negative": 24,
+              "neutral": 25
+          }
+      },
+      "9": {
+          "text": "How can we improve our product?",
+          "type": "text",
+          "next": {
+              "positive": 26,
+              "negative": 27,
+              "neutral": 28
+          }
+      },
+      "10": {
+          "text": "How was your experience with our customer service?",
+          "type": "scale",
+          "next": {
+              "positive":11,
+              "negative": 12,
+              "neutral": 31
+          }
+      },
+      "11": {
+          "text": "What is the primary reason for your satisfaction?",
+          "type": "text",
+          "next": {
+              "positive": 13,
+              "negative": 33,
+              "neutral": 34
+          }
+      },
+      "12": {
+          "text": "What is the primary reason for your dissatisfaction?",
+          "type": "text",
+          "next": {
+              "positive": 35,
+              "negative": 36,
+              "neutral": 37
+          }
+      },
+      "13": {
+          "text": "Do you find our product easy to use?",
+          "type": "scale",
+          "next": {
+              "positive": 14,
+              "negative": 15,
+              "neutral": 40
+          }
+      },
+      "14": {
+          "text": "Which features do you find the most useful?",
+          "type": "text",
+          "next": {
+              "positive": 17,
+              "negative": 42,
+              "neutral": 43
+          }
+      },
+      "15": {
+          "text": "Which features do you find the least useful?",
+          "type": "text",
+          "next": {
+              "positive": 17,
+              "negative": 45,
+              "neutral": 46
+          }
+      },
+      "16": {
+          "text": "What do you think about the design of our product?",
+          "type": "text",
+          "next": {
+              "positive": 47,
+              "negative": 48,
+              "neutral": 49
+          }
+      },
+      "17": {
+          "text": "How does our product compare to competitors?",
+          "type": "text",
+          "next": {
+              "positive": 18,
+              "negative": 51,
+              "neutral": 52
+          }
+      },
+      "18": {
+          "text": "Would you purchase our product again?",
+          "type": "scale",
+          "next": {
+              "positive": 19,
+              "negative": 54,
+              "neutral": 55
+          }
+      },
+      "19": {
+          "text": "Do you find our product reliable?",
+          "type": "scale",
+          "next": {
+              "positive": 56,
+              "negative": 57,
+              "neutral": 58
+          }
+      },
+      "20": {
+          "text": "What is your favorite aspect of our product?",
+          "type": "text",
+          "next": {
+              "positive": 59,
+              "negative": 60,
+              "neutral": 61
+          }
+      },
+      "21": {
+          "text": "What is your least favorite aspect of our product?",
+          "type": "text",
+          "next": {
+              "positive": 62,
+              "negative": 63,
+              "neutral": 64
+          }
+      },
+      "22": {
+          "text": "Do you think our product offers good value for money?",
+          "type": "scale",
+          "next": {
+              "positive": 65,
+              "negative": 66,
+              "neutral": 67
+          }
+      },
+      "23": {
+          "text": "How easy was the product to set up?",
+          "type": "scale",
+          "next": {
+              "positive": 68,
+              "negative": 69,
+              "neutral": 70
+          }
+      },
+      "24": {
+          "text": "Do you feel the product is worth the price?",
+          "type": "scale",
+          "next": {
+              "positive": 71,
+              "negative": 72,
+              "neutral": 73
+          }
+      },
+      "25": {
+          "text": "What additional features would you like to see?",
+          "type": "text",
+          "next": {
+              "positive": 74,
+              "negative": 75,
+              "neutral": 76
+          }
+      },
+      "26": {
+          "text": "How would you describe your overall experience with the product?",
+          "type": "text",
+          "next": {
+              "positive": 77,
+              "negative": 78,
+              "neutral": 79
+          }
+      },
+      "27": {
+          "text": "What improvements would make our product better?",
+          "type": "text",
+          "next": {
+              "positive": 80,
+              "negative": 81,
+              "neutral": 82
+          }
+      },
+      "28": {
+          "text": "How satisfied are you with the product's performance?",
+          "type": "scale",
+          "next": {
+              "positive": 83,
+              "negative": 84,
+              "neutral": 85
+          }
+      },
+      "29": {
+          "text": "How likely are you to continue using our product?",
+          "type": "scale",
+          "next": {
+              "positive": 86,
+              "negative": 87,
+              "neutral": 88
+          }
+      },
+      "30": {
+          "text": "How does our product meet your needs?",
+          "type": "text",
+          "next": {
+              "positive": 89,
+              "negative": 90,
+              "neutral": 91
+          }
+      },
+      "31": {
+          "text": "What do you think about the product's usability?",
+          "type": "text",
+          "next": {
+              "positive": 92,
+              "negative": 93,
+              "neutral": 94
+          }
+      },
+      "32": {
+          "text": "How satisfied are you with the product's quality?",
+          "type": "scale",
+          "next": {
+              "positive": 95,
+              "negative": 96,
+              "neutral": 97
+          }
+      },
+      "33": {
+          "text": "What do you think about the product's durability?",
+          "type": "text",
+          "next": {
+              "positive": 98,
+              "negative": 99,
+              "neutral": 100
+          }
+      },
+      "34": {
+          "text": "How does our product impact your daily routine?",
+          "type": "text",
+          "next": {
+              "positive": 101,
+              "negative": 102,
+              "neutral": null
+          }
+      },
+      "35": {
+          "text": "Do you think the product's features are well integrated?",
+          "type": "scale",
+          "next": {
+              "positive": 1,
+              "negative": 2,
+              "neutral": 3
+          }
+      },
+      "36": {
+          "text": "What do you think about the product's aesthetics?",
+          "type": "text",
+          "next": {
+              "positive": 4,
+              "negative": 5,
+              "neutral": 6
+          }
+      },
+      "37": {
+          "text": "How user-friendly is our product?",
+          "type": "scale",
+          "next": {
+              "positive": 7,
+              "negative": 8,
+              "neutral": 9
+          }
+      },
+      "38": {
+          "text": "What motivated you to purchase our product?",
+          "type": "text",
+          "next": {
+              "positive": 10,
+              "negative": 11,
+              "neutral": 12
+          }
+      },
+      "39": {
+          "text": "How would you rate the value for money of our product?",
+          "type": "scale",
+          "next": {
+              "positive": 13,
+              "negative": 14,
+              "neutral": 15
+          }
+      },
+      "40": {
+          "text": "What additional features would you find useful?",
+          "type": "text",
+          "next": {
+              "positive": 16,
+              "negative": 17,
+              "neutral": 18
+          }
+      },
+      "41": {
+          "text": "How well does our product meet your needs?",
+          "type": "scale",
+          "next": {
+              "positive": 19,
+              "negative": 20,
+              "neutral": 21
+          }
+      },
+      "42": {
+          "text": "What do you think about the product's packaging?",
+          "type": "text",
+          "next": {
+              "positive": 22,
+              "negative": 23,
+              "neutral": 24
+          }
+      },
+      "43": {
+          "text": "How satisfied are you with the product's delivery time?",
+          "type": "scale",
+          "next": {
+              "positive": 25,
+              "negative": 26,
+              "neutral": 27
+          }
+      },
+      "44": {
+          "text": "What is your overall impression of our product?",
+          "type": "text",
+          "next": {
+              "positive": 28,
+              "negative": 29,
+              "neutral": 30
+          }
+      },
+      "45": {
+          "text": "How likely are you to purchase from us again?",
+          "type": "scale",
+          "next": {
+              "positive": 31,
+              "negative": 32,
+              "neutral": 33
+          }
+      },
+      "46": {
+          "text": "What would make you more likely to recommend our product?",
+          "type": "text",
+          "next": {
+              "positive": 34,
+              "negative": 35,
+              "neutral": 36
+          }
+      },
+      "47": {
+          "text": "How does our product help you achieve your goals?",
+          "type": "text",
+          "next": {
+              "positive": 37,
+              "negative": 38,
+              "neutral": 39
+          }
+      },
+      "48": {
+          "text": "What do you think about the product's warranty?",
+          "type": "text",
+          "next": {
+              "positive": 40,
+              "negative": 41,
+              "neutral": 42
+          }
+      },
+      "49": {
+          "text": "How satisfied are you with the product's availability?",
+          "type": "scale",
+          "next": {
+              "positive": 43,
+              "negative": 44,
+              "neutral": 45
+          }
+      },
+      "50": {
+          "text": "How easy was it to find the product information?",
+          "type": "scale",
+          "next": {
+              "positive": 46,
+              "negative": 47,
+              "neutral": 48
+          }
+      },
+      "51": {
+          "text": "What improvements would you like to see in the product?",
+          "type": "text",
+          "next": {
+              "positive": 99,
+              "negative": 100,
+              "neutral": 101
+          }
+      },
+      "52": {
+          "text": "How satisfied are you with the product's color options?",
+          "type": "scale",
+          "next": {
+              "positive": 52,
+              "negative": 53,
+              "neutral": 54
+          }
+      },
+      "53": {
+          "text": "What do you think about the product's texture?",
+          "type": "text",
+          "next": {
+              "positive": 55,
+              "negative": 56,
+              "neutral": 57
+          }
+      },
+      "54": {
+          "text": "How easy was it to install the product?",
+          "type": "scale",
+          "next": {
+              "positive": 58,
+              "negative": 59,
+              "neutral": 60
+          }
+      },
+      "55": {
+          "text": "What do you think about the product's weight?",
+          "type": "text",
+          "next": {
+              "positive": 61,
+              "negative": 62,
+              "neutral": 63
+          }
+      },
+      "56": {
+          "text": "How does the product impact your daily life?",
+          "type": "text",
+          "next": {
+              "positive": 64,
+              "negative": 65,
+              "neutral": 66
+          }
+      },
+      "57": {
+          "text": "What do you think about the product's instructions?",
+          "type": "text",
+          "next": {
+              "positive": 67,
+              "negative": 68,
+              "neutral": 69
+          }
+      },
+      "58": {
+          "text": "How satisfied are you with the product's functionality?",
+          "type": "scale",
+          "next": {
+              "positive": 70,
+              "negative": 71,
+              "neutral": 72
+          }
+      },
+      "59": {
+          "text": "What do you think about the product's versatility?",
+          "type": "text",
+          "next": {
+              "positive": 73,
+              "negative": 74,
+              "neutral": 75
+          }
+      },
+      "60": {
+          "text": "How satisfied are you with the product's support materials?",
+          "type": "scale",
+          "next": {
+              "positive": 76,
+              "negative": 77,
+              "neutral": 78
+          }
+      },
+      "61": {
+          "text": "What do you think about the product's size options?",
+          "type": "text",
+          "next": {
+              "positive": 79,
+              "negative": 80,
+              "neutral": 81
+          }
+      },
+      "62": {
+          "text": "How satisfied are you with the product's durability?",
+          "type": "scale",
+          "next": {
+              "positive": 82,
+              "negative": 83,
+              "neutral": 84
+          }
+      },
+      "63": {
+          "text": "What do you think about the product's compatibility with other products?",
+          "type": "text",
+          "next": {
+              "positive": 85,
+              "negative": 86,
+              "neutral": 87
+          }
+      },
+      "64": {
+          "text": "How satisfied are you with the product's ease of use?",
+          "type": "scale",
+          "next": {
+              "positive": 88,
+              "negative": 89,
+              "neutral": 90
+          }
+      },
+      "65": {
+          "text": "What do you think about the product's battery life?",
+          "type": "text",
+          "next": {
+              "positive": 91,
+              "negative": 92,
+              "neutral": 93
+          }
+      },
+      "66": {
+          "text": "How satisfied are you with the product's connectivity?",
+          "type": "scale",
+          "next": {
+              "positive": 94,
+              "negative": 95,
+              "neutral": 96
+          }
+      },
+      "67": {
+          "text": "What do you think about the product's speed?",
+          "type": "text",
+          "next": {
+              "positive": 97,
+              "negative": 98,
+              "neutral": 99
+          }
+      },
+      "68": {
+          "text": "How satisfied are you with the product's power consumption?",
+          "type": "scale",
+          "next": {
+              "positive": 100,
+              "negative": 101,
+              "neutral": null
+          }
+      },
+      "69": {
+          "text": "What do you think about the product's interface?",
+          "type": "text",
+          "next": {
+              "positive": 1,
+              "negative": 2,
+              "neutral": 3
+          }
+      },
+      "70": {
+          "text": "How satisfied are you with the product's security features?",
+          "type": "scale",
+          "next": {
+              "positive": 4,
+              "negative": 5,
+              "neutral": 6
+          }
+      },
+      "71": {
+          "text": "What do you think about the product's eco-friendliness?",
+          "type": "text",
+          "next": {
+              "positive": 7,
+              "negative": 8,
+              "neutral": 9
+          }
+      },
+      "72": {
+          "text": "How satisfied are you with the product's maintenance requirements?",
+          "type": "scale",
+          "next": {
+              "positive": 10,
+              "negative": 11,
+              "neutral": 12
+          }
+      },
+      "73": {
+          "text": "What do you think about the product's portability?",
+          "type": "text",
+          "next": {
+              "positive": 13,
+              "negative": 14,
+              "neutral": 15
+          }
+      },
+      "74": {
+          "text": "How satisfied are you with the product's range of features?",
+          "type": "scale",
+          "next": {
+              "positive": 16,
+              "negative": 17,
+              "neutral": 18
+          }
+      },
+      "75": {
+          "text": "What do you think about the product's quality of materials?",
+          "type": "text",
+          "next": {
+              "positive": 19,
+              "negative": 20,
+              "neutral": 21
+          }
+      },
+      "76": {
+          "text": "How satisfied are you with the product's software updates?",
+          "type": "scale",
+          "next": {
+              "positive": 22,
+              "negative": 23,
+              "neutral": 24
+          }
+      },
+      "77": {
+          "text": "What do you think about the product's manufacturing process?",
+          "type": "text",
+          "next": {
+              "positive": 25,
+              "negative": 26,
+              "neutral": 27
+          }
+      },
+      "78": {
+          "text": "How satisfied are you with the product's installation process?",
+          "type": "scale",
+          "next": {
+              "positive": 28,
+              "negative": 29,
+              "neutral": 30
+          }
+      },
+      "79": {
+          "text": "What do you think about the product's after-sales service?",
+          "type": "text",
+          "next": {
+              "positive": 31,
+              "negative": 32,
+              "neutral": 33
+          }
+      },
+      "80": {
+          "text": "How satisfied are you with the product's brand reputation?",
+          "type": "scale",
+          "next": {
+              "positive": 34,
+              "negative": 35,
+              "neutral": 36
+          }
+      },
+      "81": {
+          "text": "What do you think about the product's lifespan?",
+          "type": "text",
+          "next": {
+              "positive": 37,
+              "negative": 38,
+              "neutral": 39
+          }
+      },
+      "82": {
+          "text": "How satisfied are you with the product's packaging quality?",
+          "type": "scale",
+          "next": {
+              "positive": 40,
+              "negative": 41,
+              "neutral": 42
+          }
+      },
+      "83": {
+          "text": "What do you think about the product's manufacturing quality?",
+          "type": "text",
+          "next": {
+              "positive": 43,
+              "negative": 44,
+              "neutral": 45
+          }
+      },
+      "84": {
+          "text": "How satisfied are you with the product's accessibility features?",
+          "type": "scale",
+          "next": {
+              "positive": 46,
+              "negative": 47,
+              "neutral": 48
+          }
+      },
+      "85": {
+          "text": "What do you think about the product's customization options?",
+          "type": "text",
+          "next": {
+              "positive": 49,
+              "negative": 50,
+              "neutral": 51
+          }
+      },
+      "86": {
+          "text": "How satisfied are you with the product's upgrade options?",
+          "type": "scale",
+          "next": {
+              "positive": 52,
+              "negative": 53,
+              "neutral": 54
+          }
+      },
+      "87": {
+          "text": "What do you think about the product's resale value?",
+          "type": "text",
+          "next": {
+              "positive": 55,
+              "negative": 56,
+              "neutral": 57
+          }
+      },
+      "88": {
+          "text": "How satisfied are you with the product's return policy?",
+          "type": "scale",
+          "next": {
+              "positive": 58,
+              "negative": 59,
+              "neutral": 60
+          }
+      },
+      "89": {
+          "text": "What do you think about the product's energy efficiency?",
+          "type": "text",
+          "next": {
+              "positive": 61,
+              "negative": 62,
+              "neutral": 63
+          }
+      },
+      "90": {
+          "text": "How satisfied are you with the product's social impact?",
+          "type": "scale",
+          "next": {
+              "positive": 64,
+              "negative": 65,
+              "neutral": 66
+          }
+      },
+      "91": {
+          "text": "What do you think about the product's safety features?",
+          "type": "text",
+          "next": {
+              "positive": 67,
+              "negative": 68,
+              "neutral": 69
+          }
+      },
+      "92": {
+          "text": "How satisfied are you with the product's environmental impact?",
+          "type": "scale",
+          "next": {
+              "positive": 70,
+              "negative": 71,
+              "neutral": 72
+          }
+      },
+      "93": {
+          "text": "What do you think about the product's technical support?",
+          "type": "text",
+          "next": {
+              "positive": 73,
+              "negative": 74,
+              "neutral": 75
+          }
+      },
+      "94": {
+          "text": "How satisfied are you with the product's instructional materials?",
+          "type": "scale",
+          "next": {
+              "positive": 76,
+              "negative": 77,
+              "neutral": 78
+          }
+      },
+      "95": {
+          "text": "What do you think about the product's user manual?",
+          "type": "text",
+          "next": {
+              "positive": 79,
+              "negative": 80,
+              "neutral": 81
+          }
+      },
+      "96": {
+          "text": "How satisfied are you with the product's support network?",
+          "type": "scale",
+          "next": {
+              "positive": 82,
+              "negative": 83,
+              "neutral": 84
+          }
+      },
+      "97": {
+          "text": "What do you think about the product's repairability?",
+          "type": "text",
+          "next": {
+              "positive": 85,
+              "negative": 86,
+              "neutral": 87
+          }
+      },
+      "98": {
+          "text": "How satisfied are you with the product's parts availability?",
+          "type": "scale",
+          "next": {
+              "positive": 88,
+              "negative": 89,
+              "neutral": 90
+          }
+      },
+      "99": {
+          "text": "What do you think about the product's community support?",
+          "type": "text",
+          "next": {
+              "positive": 91,
+              "negative": 92,
+              "neutral": 93
+          }
+      },
+      "100": {
+          "text": "How satisfied are you with the product's long-term value?",
+          "type": "scale",
+          "next": {
+              "positive": 94,
+              "negative": 95,
+              "neutral": null
+          }
+      },
+      "101": {
+          "text": "What do you think about the product's ease of maintenance?",
+          "type": "text",
+          "next": {
+              "positive": 97,
+              "negative": 98,
+              "neutral": null
+          }
+      },
+      "102": {
+          "text": "How satisfied are you with the product's overall performance?",
+          "type": "scale",
+          "next": {
+              "positive": 100,
+              "negative": 101,
+              "neutral": null
+          }
+      }
+  }
+  
